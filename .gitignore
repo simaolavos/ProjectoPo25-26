@@ -1,0 +1,7 @@
+*.class
+*.jar
+*.outhyp
+*.diff
+*.dat
+*.import
+*.DS_Store
