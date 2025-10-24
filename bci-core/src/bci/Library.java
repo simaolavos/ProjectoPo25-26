@@ -452,13 +452,13 @@ class Library implements Serializable {
 		for (Rule rule : _defaultRules)
 			rule.check(user, work);
 		unsubscribeAvailabilityNotification(user, work);
-		notifyRequest(work);
 		return makeRequest(user, work);
 	}
 
 	public int makeRequest(User user, Work work) {
 		int days = user.createRequest(work, _date);
 		work.borrowCopy();
+		notifyRequest(work);
 		return days;
 	}
 

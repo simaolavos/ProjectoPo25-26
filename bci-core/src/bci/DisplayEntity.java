@@ -26,4 +26,5 @@ public interface DisplayEntity {
     String displayWrongfulBehaviour(WrongfulBehaviour behaviour);
 
     String displayAbidingBehaviour(AbidingBehaviour behaviour);
+
 }
